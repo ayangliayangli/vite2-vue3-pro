@@ -1,14 +1,18 @@
 <script setup lang="ts">
-// This starter template is using Vue 3 <script setup> SFCs
-// Check out https://vuejs.org/api/sfc-script-setup.html#script-setup
-import HelloWorld from "./components/HelloWorld.vue";
-import TestGlobalScss from "@/components/TestGlobalScss.vue";
+import { RouterView } from "vue-router";
+import { Transition, KeepAlive, Suspense } from "vue";
 </script>
 
 <template>
-  <img alt="Vue logo" src="./assets/logo.png" />
-  <TestGlobalScss></TestGlobalScss>
-  <HelloWorld msg="Hello Vue 3 + TypeScript + Vite" />
+  <div>
+    <Transition>
+      <KeepAlive>
+        <Suspense>
+          <RouterView></RouterView>
+        </Suspense>
+      </KeepAlive>
+    </Transition>
+  </div>
 </template>
 
 <style>
