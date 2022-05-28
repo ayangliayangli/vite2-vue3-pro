@@ -13,6 +13,11 @@ const routes: RouteRecordRaw[] = [
     path: "/home",
     component: () => import("@/pages/HomePage.vue"),
   },
+  {
+    name: "testPinia",
+    path: "/test-pinia",
+    component: () => import("@/pages/TestPinia.vue"),
+  },
   //   {
   //     name: "notfound",
   //     path: "*",
