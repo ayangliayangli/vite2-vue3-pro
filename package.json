@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "vite serve --mode development",
     "build": "yarn build:production",
-    "build:dev": "build:development",
+    "build:dev": "yarn build:development",
     "build:development": "vue-tsc --noEmit && vite build --mode development",
     "build:prod": "yarn build:production",
     "build:production": "vue-tsc --noEmit && vite build --mode production",
@@ -35,6 +35,7 @@
     "sass": "^1.52.1",
     "typescript": "^4.5.4",
     "vite": "^2.9.9",
+    "vite-plugin-compression": "^0.5.1",
     "vue-router": "^4.0.15",
     "vue-tsc": "^0.34.7"
   },
